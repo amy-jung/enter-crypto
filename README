@@ -1,0 +1,47 @@
+Team name: ENTER CRYPTO / ALL ABOARD
+Team members: @
+
+Welcome to our ETHBerlin Submission!
+
+<Enter Crypto> is an on-boarding flow for non-coiners. 
+
+Team members: @lyricalpolymath, @Kyrrui, @epappas, @amy-jung
+(standing on the shoulders of giants): @ali2251, @austintgriffith and more
+
+Hack Idea:
+Problem: Today, Crypto is only for the initiated. To buy a domain or do anything else on ethereum, you need to be an advanced user (own a wallet and some Ether or toekns, which implies you've gone through an exchange and their lengthy KYC process)
+
+We propose a new UX flow (that is partially based on the excellent “universal logins” pattern by Alex Van De Sande), which aims at on-boarding no coiners, users that know nothing about the blockchain, giving them an ENS Name, a wallet and some tokens to start operating on the blockchain.
+
+This process has some costs, both to pay for the gas, for the deployment of the contracts, eventually for the registration of the name and some tokens to incentivise the users.
+
+Solution:
+
+It’s the Web3 version of the "customer acquisition cost" and we propose that it should be shared among the dapps of the space: we need to onboard the users onto the blockchain before onboarding them on a dapp.
+
+We will present the mechanisms (UX, smart contracts, and token dynamics) that will incentivise partners to participate in this alliance for mass adoption, share the customer acquisition costs and offer new users a simple, guided and effective entry point into crypto.
+
+A user that lands on ENS (or any other dapp) should be able to get
+
+their name
+a wallet
+and some tokens/ether to start playing with their domain
+
+Network
+Rinkeby	
+
+Smart Contracts
+The smart contracts are housed in this github repository.
+
+The smart contracts consist of 3 contracts: Identity, Alliance Registry, and Signature Validator
+The Identity contract uses and provides an Allowance (Users receive a small fund for initial transactions and interactions in the Registry).
+Alliance Registry contract stores a public list of all Alliance members and allows the Identity created to Received Fund to be used in Registry.
+The Signature Validator contract verifies the Registry and Identity. 
+
+This has some key variables such as Metatransactions () and Proofs (public transactions where users prove they have given the correct addresses).
+
+The contract will only allow Received Funds to be used with DApps within the Alliance Registry. 
+
+Tech Stack
+ENS for Identity
+Truffle for Front End
